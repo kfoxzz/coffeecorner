@@ -1,0 +1,36 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.jumbotron {
+    background-color: tan;
+    color: white;
+}
+
+h6 {
+    font-style: italic;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.home-btn {
+    font-family: 'Farro', sans-serif;
+    font-size: smaller;
+}
+
+.navbar {
+    font-family: 'Farro', sans-serif;
+    background-color: white;
+}
+
+.no-underline {
+    text-decoration: none !important;
+}
+
+footer {
+    font-family: 'Farro', sans-serif;
+    background-color: tan;
+    color: white;
+}

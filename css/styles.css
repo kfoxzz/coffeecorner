@@ -3,7 +3,7 @@ body {
 }
 
 .jumbotron {
-    background-color: tan;
+    background-image: linear-gradient(BurlyWood, bisque);
     color: white;
 }
 
@@ -13,6 +13,7 @@ h6 {
 
 h2 {
     font-weight: 400;
+    font-family: 'Farro', sans-serif;
 }
 
 .home-btn {
@@ -30,7 +31,7 @@ h2 {
 }
 
 footer {
-    font-family: 'Farro', sans-serif;
-    background-color: tan;
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(bisque, BurlyWood);
     color: white;
 }

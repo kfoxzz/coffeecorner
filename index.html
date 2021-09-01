@@ -21,7 +21,7 @@
 
     <header>
         <div class="jumbotron jumbotron-fluid">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row py-3">
                     <div class="col-2 col-lg-1 align-self-center">
                         <img src="img/coffee-cup-1.png" class="img-fluid" />
@@ -29,6 +29,11 @@
                     <div class="col align-self-center">
                         <h2>Kristi's Coffee Corner</h2>
                         <h6>A slice of heaven, in your own neighborhood.</h6>
+                    </div>
+                    <div class="col-1">
+                        <a class="btn btn-social-icon">
+                            <i class="fa fa-shopping-cart text-light"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -42,7 +47,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="coffeeCornerNavbar">
-                <ul class="navbar-nav text-dark nav-fill">
+                <ul class="navbar-nav text-dark">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
@@ -53,7 +58,7 @@
                         <a class="nav-link" href="menu.html">MENU</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SUBSCRIPTIONS</a>
+                        <a class="nav-link" href="memberships.html">MEMBERSHIPS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="locations.html">LOCATIONS</a>
@@ -74,8 +79,8 @@
             <div class="col-sm-12 col-md-4">
                 <div class="card text-center border-0">
                     <div class="card-body">
-                        <h3>Genuine coffee. Genuine people. All the time.</h3>
-                        <a href="about.html" class="btn home-btn btn-secondary w-50">MORE ABOUT US</a>
+                        <h3 class="mb-4">Genuine coffee. Genuine people. All the time.</h3>
+                        <a href="about.html" class="btn btn-secondary w-50"><small>More about us</small></a>
                     </div>
                 </div>
             </div>
@@ -85,8 +90,8 @@
             <div class="col-sm-12 order-last order-md-first col-md-4">
                 <div class="card text-center border-0">
                     <div class="card-body">
-                        <h3>Browse through our menu of delicious things that are guaranteed to make your day a little brighter.</h3>
-                        <a href="menu.html" class="btn home-btn btn-secondary w-50">TAKE A LOOK</a>
+                        <h3 class="mb-4">Browse through our menu of delicious things that are guaranteed to make your day a little brighter.</h3>
+                        <a href="menu.html" class="btn btn-secondary w-50"><small>Take a look</small></a>
                     </div>
                 </div>
             </div>
@@ -102,17 +107,34 @@
             <div class="col-sm-12 col-md-4">
                 <div class="card text-center border-0">
                     <div class="card-body">
-                        <h3>Reward yourself and save with our subscription program.</h3>
-                        <a href="subscription.html" class="btn home-btn btn-secondary w-50">SEE YOUR OPTIONS</a>
+                        <h3 class="mb-4">Reward yourself and save with our subscription program.</h3>
+                        <a href="subscription.html" class="btn btn-secondary w-50"><small>Sign up today</small></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     
-    <footer class="footer mt-auto py-3">
+    <footer class="footer mt-auto pb-3">
+        <div class="container-fluid py-3 mt-0">
+            <div class="row">
+                <div class="col text-center text-light">
+                    <p class="text-dark">Sign Up To Receive Special Offers, Coupons, And Updates!</p>
+                </div>
+            </div>
+            <form class="row align-items-center text-center">
+                    <div class="col-10 offset-1 col-md-8 mb-2 text-center offset-md-2">
+                        <label for="subscribeEmail" class="sr-only form-label">Email address</label>
+                        <input class="form-control" id="subscribeEmail" type="email" placeholder="Email address" />
+                        <div class="my-2">
+                            <a class="btn btn-secondary" role="button" type="button">SUBSCRIBE</a>
+                        </div>
+                    </div>
+            </form>
+        </div>
         <div class="container">
-            <div class="row py-3">
+            <div class="row">
                 <div class="col-6 text-center">
                     <ul class="list-unstyled">
                         <li>
@@ -129,7 +151,7 @@
                 <div class="col-6 text-center">
                     <ul class="list-unstyled">
                         <li>
-                            <a class="link-light no-underline" href="#">Subscriptions</a>
+                            <a class="link-light no-underline" href="memberships.html">Memberships</a>
                         </li>
                         <li>
                             <a class="link-light no-underline" href="locations.html">Locations</a>
@@ -140,11 +162,19 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-1">
                 <div class="col text-center">
-                    <a class="btn btn-social-icon" href="http://facebook.com/"><i class="fas fa-facebook-f"></i></a>
-                    <i class="fas fa-camera"></i>
-                    <i class="fas fa-camera"></i>
+                    <a class="btn btn-social-icon" href="http://facebook.com/"><i class="fa fa-facebook text-white"></i></a>
+                    <a class="btn btn-social-icon" href="http://instagram.com/"><i class="fa fa-instagram text-white"></i></a>
+                    <a class="btn btn-social-icon" href="http://yelp.com/"><i class="fa fa-yelp text-white"></i></a>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col text-center">
+                    <a class="btn btn-social-icon"><i class="fa fa-cc-visa text-light"></i></a>
+                    <a class="btn btn-social-icon"><i class="fa fa-cc-mastercard text-light"></i></a>
+                    <a class="btn btn-social-icon"><i class="fa fa-cc-amex text-light"></i></a>
+                    <a class="btn btn-social-icon"><i class="fa fa-cc-paypal text-light"></i></a>
                 </div>
             </div>
         </div>

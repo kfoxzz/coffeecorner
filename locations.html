@@ -16,6 +16,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <title>Kristi's Coffee Corner</title>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -23,17 +42,17 @@
     <header>
         <div class="jumbotron jumbotron-fluid">
             <div class="container-fluid">
-                <div class="row py-3">
+                <div class="row py-4">
                     <div class="col-2 col-lg-1 align-self-center">
-                        <img src="img/coffee-cup-1.png" class="img-fluid" />
+                        <img src="img/black-cup-2.png" class="img-fluid" />
                     </div>
-                    <div class="col align-self-center">
+                    <div class="col align-self-center text-dark border-bottom border-top border-2 border-dark py-3">
                         <h2>Kristi's Coffee Corner</h2>
                         <h6 class="text-dark">A slice of heaven, in your own neighborhood.</h6>
                     </div>
                     <div class="col-1">
                         <a class="btn btn-social-icon">
-                            <i class="fa fa-shopping-cart text-light"></i>
+                            <i class="fa fa-shopping-cart text-dark"></i>
                         </a>
                     </div>
                 </div>
@@ -71,6 +90,18 @@
             </div>
         </div>
     </nav>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>My Google Maps Demo</h3>
+                <!--The div element for the map -->
+                <div id="map"></div>
+            </div>
+        </div>        
+    </div>
 
 
     <footer class="footer mt-auto pb-3">
@@ -140,6 +171,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVb-5AWonv9-px_jIfkOPGJlspO7u5Ezg&callback=initMap&libraries=&v=weekly"
+        async></script>
+
 </body>
 
 </html>

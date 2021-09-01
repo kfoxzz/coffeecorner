@@ -3,7 +3,6 @@ body {
 }
 
 .jumbotron {
-    background-image: linear-gradient(BurlyWood, bisque);
     color: white;
 }
 
@@ -14,6 +13,10 @@ h6 {
 h2 {
     font-weight: 400;
     font-family: 'Farro', sans-serif;
+}
+
+header h2 {
+    color: #CADE87;
 }
 
 .home-btn {
@@ -32,7 +35,7 @@ h2 {
 
 footer {
     font-family: 'Raleway', sans-serif;
-    background-image: linear-gradient(bisque, BurlyWood);
+    background-image: linear-gradient(white, black);
     color: white;
 }
 
@@ -45,6 +48,13 @@ footer {
 }
 
 .card-header {
-    background-image: linear-gradient(bisque, BurlyWood);
+    background-color: #CADE87;
     color: white;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }

@@ -43,3 +43,8 @@ footer {
 .menu .menu-text {
     font-family: 'Raleway', sans-serif;
 }
+
+.card-header {
+    background-image: linear-gradient(bisque, BurlyWood);
+    color: white;
+}

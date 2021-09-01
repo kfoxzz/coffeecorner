@@ -16,24 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <title>Kristi's Coffee Corner</title>
-
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of Uluru
-            const uluru = { lat: -25.344, lng: 131.036 };
-            // The map, centered at Uluru
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
-                center: uluru,
-            });
-            // The marker, positioned at Uluru
-            const marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-            });
-        }
-    </script>
+    <!--Map script-->
+    <script src="scripts/map.js"></script>
 
 </head>
 
@@ -93,18 +77,58 @@
 
 
 
-    <div class="container">
+    <div class="container py-4">
         <div class="row">
-            <div class="col">
-                <h3>My Google Maps Demo</h3>
+            <div class="col-12 col-md-4 text-center">
+                <h2>Locations</h2>
+                <br />
+                <ul class="list-unstyled">
+                    <li>
+                        <h4>Los Angeles</h4>
+                    </li>
+                    <li>12345 State St.</li>
+                    <li>Los Angeles, CA 90210</li>
+                    <li>+1-555-224-2938</li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li>
+                        <h4>Irvine</h4>
+                    </li>
+                    <li>10275 1st St.</li>
+                    <li>Irvine, CA 92610</li>
+                    <li>+1-555-234-5678</li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li>
+                        <h4>Newport Beach</h4>
+                    </li>
+                    <li>375 Pacific Ave.</li>
+                    <li>Newport Beach, CA 92178</li>
+                    <li>+1-555-209-1287</li>
+                </ul>
+            </div>
+            <div class="col-md-8 order-first order-md-last h-100 mb-3">
                 <!--The div element for the map -->
                 <div id="map"></div>
             </div>
-        </div>        
+        </div>
     </div>
 
-
-    <footer class="footer mt-auto pb-3">
+    <div id="subscribeModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>You're now subscribed! Woohoo!</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer mt-auto py-3">
         <div class="container-fluid py-3 mt-0">
             <div class="row">
                 <div class="col text-center text-light">
@@ -116,7 +140,8 @@
                     <label for="subscribeEmail" class="sr-only form-label">Email address</label>
                     <input class="form-control" id="subscribeEmail" type="email" placeholder="Email address" />
                     <div class="my-2">
-                        <a class="btn btn-secondary" role="button" type="button">SUBSCRIBE</a>
+                        <a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#subscribeModal"
+                            role="button">Subscribe</a>
                     </div>
                 </div>
             </form>
@@ -152,8 +177,10 @@
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <a class="btn btn-social-icon" href="http://facebook.com/"><i class="fa fa-facebook text-white"></i></a>
-                    <a class="btn btn-social-icon" href="http://instagram.com/"><i class="fa fa-instagram text-white"></i></a>
+                    <a class="btn btn-social-icon" href="http://facebook.com/"><i
+                            class="fa fa-facebook text-white"></i></a>
+                    <a class="btn btn-social-icon" href="http://instagram.com/"><i
+                            class="fa fa-instagram text-white"></i></a>
                     <a class="btn btn-social-icon" href="http://yelp.com/"><i class="fa fa-yelp text-white"></i></a>
                 </div>
             </div>
@@ -172,7 +199,8 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVb-5AWonv9-px_jIfkOPGJlspO7u5Ezg&callback=initMap&libraries=&v=weekly"
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVb-5AWonv9-px_jIfkOPGJlspO7u5Ezg&callback=initMap&libraries=&v=weekly"
         async></script>
 
 </body>

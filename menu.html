@@ -159,7 +159,21 @@
     </div>
 
 
-    <footer class="footer mt-auto pb-3">
+    <div id="subscribeModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>You're now subscribed! Woohoo!</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer mt-auto py-3">
         <div class="container-fluid py-3 mt-0">
             <div class="row">
                 <div class="col text-center text-light">
@@ -171,7 +185,8 @@
                     <label for="subscribeEmail" class="sr-only form-label">Email address</label>
                     <input class="form-control" id="subscribeEmail" type="email" placeholder="Email address" />
                     <div class="my-2">
-                        <a class="btn btn-secondary" role="button" type="button">SUBSCRIBE</a>
+                        <a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#subscribeModal"
+                            role="button">Subscribe</a>
                     </div>
                 </div>
             </form>

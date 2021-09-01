@@ -13,7 +13,8 @@
   "dependencies": {
     "bootstrap": "^5.1.0",
     "bootstrap-social": "^5.1.1",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "popper": "^1.0.1"
   },
   "devDependencies": {
     "lite-server": "^2.6.1"

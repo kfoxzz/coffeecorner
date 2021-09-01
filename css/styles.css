@@ -35,3 +35,11 @@ footer {
     background-image: linear-gradient(bisque, BurlyWood);
     color: white;
 }
+
+.menu {
+    font-family: 'Farro', serif;
+}
+
+.menu .menu-text {
+    font-family: 'Raleway', sans-serif;
+}

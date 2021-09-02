@@ -52,9 +52,26 @@ footer {
     color: white;
 }
 
+.card {
+  background: rgba(0, 0, 0, 0);
+}
+
+
 #map {
   height: 400px;
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
+}
+
+.zoom {
+  transition: transform 1s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px gray;
 }

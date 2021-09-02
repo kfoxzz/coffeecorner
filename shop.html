@@ -10,7 +10,8 @@
     <!-- Additional CSS, must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,100&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,100&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Farro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
@@ -23,7 +24,7 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container-fluid">
                 <div class="row py-4">
-                    <div class="col-2 col-md-1 align-self-center">
+                    <div class="col-2 col-lg-1 align-self-center">
                         <img src="img/black-cup-2.png" class="img-fluid" />
                     </div>
                     <div class="col align-self-center text-dark border-bottom border-top border-2 border-dark py-3">
@@ -47,12 +48,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="coffeeCornerNavbar">
-                <ul class="navbar-nav text-dark">
-                    <li class="nav-item">
-                        <a class="nav-link active zoom" aria-current="page" href="#">HOME</a>
+                <ul class="navbar-nav text-dark nav-fill">
+                    <li class="nav-item zoom">
+                        <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item zoom">
-                        <a class="nav-link" href="about.html">ABOUT</a>
+                        <a class="nav-link" aria-current="page" href="index.html">ABOUT</a>
                     </li>
                     <li class="nav-item zoom">
                         <a class="nav-link" href="menu.html">MENU</a>
@@ -61,7 +62,7 @@
                         <a class="nav-link" href="memberships.html">MEMBERSHIPS</a>
                     </li>
                     <li class="nav-item zoom">
-                        <a class="nav-link" href="shop.html">SHOP</a>
+                        <a class="nav-link active" href="shop.html">SHOP</a>
                     </li>
                     <li class="nav-item zoom">
                         <a class="nav-link" href="locations.html">LOCATIONS</a>
@@ -74,52 +75,8 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row align-items-center py-4">
-            <div class="col-sm-12 col-md-8 zoom">
-                <img class="img-fluid box-shadow" src="img/coffee-and-friends.jpeg" alt="Coffee and Friends" />
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="card text-center border-0">
-                    <div class="card-body">
-                        <h3 class="mb-4">Genuine coffee. Genuine people. All the time.</h3>
-                        <p class="d-none d-lg-block mb-4">When you're in our shop, you're family.</p>
-                        <a href="about.html" class="btn btn-secondary w-50 zoom"><small>More about us</small></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row align-items-center py-4">
-            <div class="col-sm-12 order-last order-md-first col-md-4">
-                <div class="card text-center border-0">
-                    <div class="card-body">
-                        <h3 class="mb-4">Browse through our menu of delicious things that are guaranteed to make your day a little brighter.</h3>
-                        <p class="d-none d-lg-block mb-4">From coffee to treats, we have something for everyone!</p>
-                        <a href="menu.html" class="btn btn-secondary w-50 zoom"><small>Take a look</small></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-8 zoom">
-                <img class="img-fluid box-shadow" src="img/busy-coffee-shop.jpeg" alt="Busy Shop" />
-            </div>
-        </div>
-        <hr>
-        <div class="row align-items-center py-4 pb-5">
-            <div class="col-sm-12 col-md-8 zoom">
-                <img class="img-fluid box-shadow" src="img/steamed-milk.jpeg" alt="Latte Pour" />
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="card text-center border-0">
-                    <div class="card-body">
-                        <h3 class="mb-4">Reward yourself and save with our membership program.</h3>
-                        <p class="d-none d-lg-block mb-4">Everyone deserves free coffee.</p>
-                        <a href="memberships.html" class="btn btn-secondary w-50 zoom"><small>Sign up today</small></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+ 
+
 
     <div id="subscribeModal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -134,7 +91,7 @@
             </div>
         </div>
     </div>
-    
+
     <footer class="footer mt-auto py-3">
         <div class="container-fluid py-3 mt-0">
             <div class="row">
@@ -158,10 +115,10 @@
                 <div class="col-6 text-center">
                     <ul class="list-unstyled">
                         <li>
-                            <a class="link-light no-underline" href="#">Home</a>
+                            <a class="link-light no-underline" href="index.html">Home</a>
                         </li>
                         <li>
-                            <a class="link-light no-underline" href="about.html">About</a>
+                            <a class="link-light no-underline" href="#">About</a>
                         </li>
                         <li>
                             <a class="link-light no-underline" href="menu.html">Menu</a>
@@ -182,11 +139,14 @@
                     </ul>
                 </div>
             </div>
-            <div class="row mb-1">
+            <div class="row">
                 <div class="col text-center">
-                    <a class="btn btn-social-icon zoom" href="http://facebook.com/"><i class="fa fa-facebook text-white"></i></a>
-                    <a class="btn btn-social-icon zoom" href="http://instagram.com/"><i class="fa fa-instagram text-white"></i></a>
-                    <a class="btn btn-social-icon zoom" href="http://yelp.com/"><i class="fa fa-yelp text-white"></i></a>
+                    <a class="btn btn-social-icon zoom" href="http://facebook.com/"><i
+                            class="fa fa-facebook text-white"></i></a>
+                    <a class="btn btn-social-icon zoom" href="http://instagram.com/"><i
+                            class="fa fa-instagram text-white"></i></a>
+                    <a class="btn btn-social-icon zoom" href="http://yelp.com/"><i
+                            class="fa fa-yelp text-white"></i></a>
                 </div>
             </div>
             <div class="row mb-2">
@@ -203,7 +163,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>

@@ -34,15 +34,60 @@
                         <h2>Kristi's Coffee Corner</h2>
                         <h6 class="text-light">A slice of heaven, in your own neighborhood.</h6>
                     </div>
-                    <div class="col-4 text-light text-end d-none d-md-block mx-3">
-                        contact@kristiscoffeecorner.co
-                        <br />
-                        +1-555-234-1029
+                    <div class="col-1 col-md-auto text-light text-end mx-3">
+                        <a class="btn btn-social-icon" id="login" data-bs-toggle="modal" data-bs-target="#loginModal"><i
+                                class="fa fa-user-circle text-light"></i></a>
+                        <div class="d-none d-md-block text-bottom">
+                            contact@kristiscoffeecorner.co
+                            <br />
+                            +1-555-234-1029
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <div id="loginModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Log in</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12 mb-2">
+                                    <input class="form-control" type="email" placeholder="Email" />
+                                </div>
+                                <div class="form-group col-12 mb-2">
+                                    <input class="form-control" type="password" placeholder="Password" />
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    New?
+                                    <span>
+                                        <a href="#">Create an account</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-tan text-light" data-bs-dismiss="modal">Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <nav class="navbar navbar-light navbar-expand-sm sticky-top">
         <div class="container">

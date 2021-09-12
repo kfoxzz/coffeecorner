@@ -133,7 +133,7 @@
                         <p class="card-text">$25.00</p>
                         <div class="row mx-auto">
                             <div class="col-12 col-md-6 pb-2">
-                                <select class="form-select" aria-label="Default select example">
+                                <select id="darkLg" class="form-select" aria-label="Default select example">
                                     <option selected>Quantity</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -143,7 +143,7 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning" onclick="addToCart('darkLg', 'price_1JYwgyAOdPwZgIGSA3AQ8doc')">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                         <p class="card-text">$15.00</p>
                         <div class="row mx-auto">
                             <div class="col-12 col-md-6 pb-2">
-                                <select class="form-select" aria-label="Default select example">
+                                <select id="darkSm" class="form-select" aria-label="Default select example">
                                     <option selected>Quantity</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -167,7 +167,7 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning" onclick="addToCart('darkSm', 'price_1JYxqLAOdPwZgIGSem4REW63')">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -183,7 +183,7 @@
                         <p class="card-text">$25.00</p>
                         <div class="row mx-auto">
                             <div class="col-12 col-md-6 pb-2">
-                                <select class="form-select" aria-label="Default select example">
+                                <select id="lightLg" class="form-select" aria-label="Default select example">
                                     <option selected>Quantity</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -193,7 +193,7 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning" onclick="addToCart('lightLg', 'price_1JYxrmAOdPwZgIGS5ifyTpdO')">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -207,7 +207,7 @@
                         <p class="card-text">$15.00</p>
                         <div class="row mx-auto">
                             <div class="col-12 col-md-6 pb-2">
-                                <select class="form-select" aria-label="Default select example">
+                                <select id="lightSm" class="form-select" aria-label="Default select example">
                                     <option selected>Quantity</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -217,7 +217,7 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning" onclick="addToCart('lightSm', 'price_1JYxsGAOdPwZgIGSgGklx3SR')">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -233,7 +233,7 @@
                         <p class="card-text">$30.00</p>
                         <div class="row mx-auto">
                             <div class="col-12 col-md-6 pb-2">
-                                <select class="form-select" aria-label="Default select example">
+                                <select id="espressoLg" class="form-select" aria-label="Default select example">
                                     <option selected>Quantity</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -243,7 +243,7 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning" onclick="addToCart('espressoLg', 'price_1JYxskAOdPwZgIGSr7Zoc0KA')">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -257,7 +257,7 @@
                         <p class="card-text">$20.00</p>
                         <div class="row mx-auto">
                             <div class="col-12 col-md-6 pb-2">
-                                <select class="form-select" aria-label="Default select example">
+                                <select id="espressoSm" class="form-select" aria-label="Default select example">
                                     <option selected>Quantity</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -267,7 +267,7 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning" onclick="addToCart('espressoSm', 'price_1JYxt9AOdPwZgIGSP3N9y9ru')">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -361,8 +361,10 @@
     </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/shop.js"></script>
+
 </body>
 
 </html>

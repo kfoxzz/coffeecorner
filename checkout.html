@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" script-src='unsafe-inline' ;>
+    <title>Kristi's Coffee Corner</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="scripts/checkout.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="product" id="price_1JYwgyAOdPwZgIGSA3AQ8doc">
+            <div class="description">
+                <h3>Large Bag - Dark Roast Coffee Beans</h3>
+                <h5>$25.00</h5>
+                <h5 class="quantity">x 1</h5>
+            </div>
+        </div>
+        <div class="product" id="price_1JYxqLAOdPwZgIGSem4REW63">
+            <div class="description">
+                <h3>Small Bag - Dark Roast Coffee Beans</h3>
+                <h5>$15.00</h5>
+                <h5 class="quantity">x 1</h5>
+            </div>
+        </div>
+        <div class="product" id="price_1JYxrmAOdPwZgIGS5ifyTpdO">
+            <div class="description">
+                <h3>Large Bag - Light Roast Coffee Beans</h3>
+                <h5>$25.00</h5>
+                <h5 class="quantity">x 1</h5>
+            </div>
+        </div>
+        <div class="product" id="price_1JYxsGAOdPwZgIGSgGklx3SR">
+            <div class="description">
+                <h3>Small Bag - Light Roast Coffee Beans</h3>
+                <h5>$15.00</h5>
+                <h5 class="quantity">x 1</h5>
+            </div>
+        </div>
+        <div class="product" id="price_1JYxskAOdPwZgIGSr7Zoc0KA">
+            <div class="description">
+                <h3>Large Bag - Espresso Beans</h3>
+                <h5>$30.00</h5>
+                <h5 class="quantity">x 1</h5>
+            </div>
+        </div>
+        <div class="product" id="price_1JYxt9AOdPwZgIGSP3N9y9ru">
+            <div class="description">
+                <h3>Small Bag - Espresso Beans</h3>
+                <h5>$20.00</h5>
+                <h5 class="quantity">x 1</h5>
+            </div>
+        </div>
+        <form action="http://localhost:4000/create-checkout-session" method="POST">
+            <button type="submit" id="checkout-button">Checkout</button>
+        </form>
+    </section>
+</body>
+
+</html>

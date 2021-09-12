@@ -19,3 +19,23 @@ window.onload = function() {
         }
 }
 
+const initiateCheckout = () => {
+        const itemData = {
+                data: itemArray
+        }
+        console.log(itemData);
+        fetch('http://localhost:4000/create-checkout-session', {
+                method: 'POST',
+                headers: new Headers({
+                        'Access-Control-Allow-Origin': '*',
+                        'Content-Type': 'application/json',
+                }),
+                body: JSON.stringify(itemData),
+        })
+        .then(response => response.json())
+        .then(data => window.location = data.url);
+}
+
+
+
+

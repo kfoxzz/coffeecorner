@@ -1,17 +1,227 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" class="h-100">
 
 <head>
-    <title>Thanks for your order!</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS, must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,100&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Farro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Kristi's Coffee Corner</title>
 </head>
 
-<body>
-    <section>
-        <p>
-            We appreciate your business! If you have any questions, please email
-            <a href="mailto:orders@example.com">orders@example.com</a>.
-        </p>
-    </section>
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <div class="jumbotron jumbotron-fluid bg-dark">
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-2 col-md-1 align-self-center">
+                        <a href="index.html">
+                            <img src="img/coffee-cup-1.png" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="col align-self-center text-dark border-bottom border-top border-2 border-dark py-3">
+                        <h2>Kristi's Coffee Corner</h2>
+                        <h6 class="text-light">A slice of heaven, in your own neighborhood.</h6>
+                    </div>
+                    <div class="col-1 col-md-auto text-light text-end mx-3">
+                        <a class="btn btn-social-icon" id="login" data-bs-toggle="modal" data-bs-target="#loginModal"><i
+                                class="fa fa-user-circle text-light"></i></a>
+                        <div class="d-none d-md-block text-bottom">
+                            contact@kristiscoffeecorner.co
+                            <br />
+                            +1-555-234-1029
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="loginModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Log in</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12 mb-2">
+                                    <input class="form-control" type="email" placeholder="Email" />
+                                </div>
+                                <div class="form-group col-12 mb-2">
+                                    <input class="form-control" type="password" placeholder="Password" />
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    New?
+                                    <span>
+                                        <a href="#">Create an account</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-tan text-light" data-bs-dismiss="modal">Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-light navbar-expand-sm sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#coffeeCornerNavbar"
+                aria-controls="coffeeCornerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="coffeeCornerNavbar">
+                <ul class="navbar-nav text-dark nav-fill">
+                    <li class="nav-item zoom">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item zoom">
+                        <a class="nav-link" aria-current="page" href="index.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item zoom">
+                        <a class="nav-link" href="menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item zoom">
+                        <a class="nav-link" href="memberships.html">MEMBERSHIPS</a>
+                    </li>
+                    <li class="nav-item zoom">
+                        <a class="nav-link active" href="shop.html">SHOP</a>
+                    </li>
+                    <li class="nav-item zoom">
+                        <a class="nav-link" href="locations.html">LOCATIONS</a>
+                    </li>
+                    <li class="nav-item zoom">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col col-md-6 mx-auto text-center text-wrap">
+                <h4>
+                    We appreciate your business! If you have any questions, please email
+                    <a href="mailto:contact@kristiscoffeecorner.co">contact@kristiscoffeecorner.co</a>.
+                </h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="subscribeModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>You're now subscribed! Woohoo!</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container-fluid py-3 mt-0">
+            <div class="row">
+                <div class="col text-center text-light">
+                    <p class="text-dark">Sign Up To Receive Special Offers, Coupons, And Updates!</p>
+                </div>
+            </div>
+            <form class="row align-items-center text-center">
+                <div class="col-10 offset-1 col-md-8 col-xl-6 mb-2 text-center offset-md-2 offset-xl-3">
+                    <label for="subscribeEmail" class="sr-only form-label">Email address</label>
+                    <input class="form-control" id="subscribeEmail" type="email" placeholder="Email address" />
+                    <div class="my-2">
+                        <a data-bs-toggle="modal" data-bs-target="#subscribeModal">
+                            <button class="btn btn-secondary">Subscribe</button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-center">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="link-light no-underline" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="link-light no-underline" href="#">About</a>
+                        </li>
+                        <li>
+                            <a class="link-light no-underline" href="menu.html">Menu</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 text-center">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="link-light no-underline" href="memberships.html">Memberships</a>
+                        </li>
+                        <li>
+                            <a class="link-light no-underline" href="locations.html">Locations</a>
+                        </li>
+                        <li>
+                            <a class="link-light no-underline" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a class="btn btn-social-icon zoom" href="http://facebook.com/"><i
+                            class="fa fa-facebook text-white"></i></a>
+                    <a class="btn btn-social-icon zoom" href="http://instagram.com/"><i
+                            class="fa fa-instagram text-white"></i></a>
+                    <a class="btn btn-social-icon zoom" href="http://yelp.com/"><i
+                            class="fa fa-yelp text-white"></i></a>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col text-center">
+                    <a class="btn btn-social-icon"><i class="fa fa-cc-visa text-light"></i></a>
+                    <a class="btn btn-social-icon"><i class="fa fa-cc-mastercard text-light"></i></a>
+                    <a class="btn btn-social-icon"><i class="fa fa-cc-amex text-light"></i></a>
+                    <a class="btn btn-social-icon"><i class="fa fa-cc-paypal text-light"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/shop.js"></script>
+
 </body>
 
 </html>

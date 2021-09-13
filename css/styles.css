@@ -87,3 +87,7 @@ footer {
 .product {
     display: none;
 }
+
+.green-bg {
+    background-color: #CADE87;
+}

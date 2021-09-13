@@ -37,6 +37,7 @@
                     <div class="col-1 col-md-auto text-light text-end mx-3">
                         <a class="btn btn-social-icon" id="login" data-bs-toggle="modal" data-bs-target="#loginModal"><i
                                 class="fa fa-user-circle text-light"></i></a>
+                        <a class="btn btn-social-icon" id="checkout"><i class="fa fa-shopping-cart text-light" data-bs-toggle="modal" data-bs-target="#checkoutModal"></i></a>
                         <div class="d-none d-md-block text-bottom">
                             contact@kristiscoffeecorner.co
                             <br />
@@ -84,6 +85,83 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-tan text-light" data-bs-dismiss="modal">Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkoutModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Cart</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col" id="cartItems">
+                                <div class="product" id="price_1JYwgyAOdPwZgIGSA3AQ8doc">
+                                    <div class="description">
+                                        <h4>Large Bag - Dark Roast Coffee Beans</h4>
+                                        <h5>$25.00 each</h5>
+                                        <h5 class="quantity">x 1</h5>
+                                        <button type="submit" id="remove-button" class="btn btn-secondary"
+                                            onclick="removeFromCart('price_1JYwgyAOdPwZgIGSA3AQ8doc')">Remove</button>
+                                    </div>
+                                </div>
+                                <div class="product" id="price_1JYxqLAOdPwZgIGSem4REW63">
+                                    <div class="description">
+                                        <h4>Small Bag - Dark Roast Coffee Beans</h4>
+                                        <h5>$15.00 each</h5>
+                                        <h5 class="quantity">x 1</h5>
+                                        <button type="submit" id="remove-button" class="btn btn-secondary"
+                                            onclick="removeFromCart('price_1JYxqLAOdPwZgIGSem4REW63')">Remove</button>
+                                    </div>
+                                </div>
+                                <div class="product" id="price_1JYxrmAOdPwZgIGS5ifyTpdO">
+                                    <div class="description">
+                                        <h4>Large Bag - Light Roast Coffee Beans</h4>
+                                        <h5>$25.00 each</h5>
+                                        <h5 class="quantity">x 1</h5>
+                                        <button type="submit" id="remove-button" class="btn btn-secondary"
+                                            onclick="removeFromCart('price_1JYxrmAOdPwZgIGS5ifyTpdO')">Remove</button>
+                                    </div>
+                                </div>
+                                <div class="product" id="price_1JYxsGAOdPwZgIGSgGklx3SR">
+                                    <div class="description">
+                                        <h4>Small Bag - Light Roast Coffee Beans</h4>
+                                        <h5>$15.00 each</h5>
+                                        <h5 class="quantity">x 1</h5>
+                                        <button type="submit" id="remove-button" class="btn btn-secondary"
+                                            onclick="removeFromCart('price_1JYxsGAOdPwZgIGSgGklx3SR')">Remove</button>
+                                    </div>
+                                </div>
+                                <div class="product" id="price_1JYxskAOdPwZgIGSr7Zoc0KA">
+                                    <div class="description">
+                                        <h4>Large Bag - Espresso Beans</h4>
+                                        <h5>$30.00 each</h5>
+                                        <h5 class="quantity">x 1</h5>
+                                        <button type="submit" id="remove-button" class="btn btn-secondary"
+                                            onclick="removeFromCart('price_1JYxskAOdPwZgIGSr7Zoc0KA')">Remove</button>
+                                    </div>
+                                </div>
+                                <div class="product" id="price_1JYxt9AOdPwZgIGSP3N9y9ru">
+                                    <div class="description">
+                                        <h4>Small Bag - Espresso Beans</h4>
+                                        <h5>$20.00 each</h5>
+                                        <h5 class="quantity">x 1</h5>
+                                        <button type="submit" id="remove-button" class="btn btn-secondary"
+                                            onclick="removeFromCart('price_1JYxt9AOdPwZgIGSP3N9y9ru')">Remove</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" id="checkout-button" class="btn btn-secondary"
+                        onclick="initiateCheckout()">Checkout</button>
                 </div>
             </div>
         </div>
@@ -246,6 +324,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/checkout.js"></script>
 
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVb-5AWonv9-px_jIfkOPGJlspO7u5Ezg&callback=initMap&libraries=&v=weekly"

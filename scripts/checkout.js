@@ -71,5 +71,3 @@ const initiateCheckout = () => {
         .then(response => response.json())
         .then(data => window.location = data.url);
 }
-
-

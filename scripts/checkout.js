@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 let itemArray = [];
 let keys = Object.keys(localStorage);
 

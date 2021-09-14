@@ -60,7 +60,7 @@ const initiateCheckout = () => {
                 data: itemArray
         }
         console.log(itemData);
-        fetch(`${YOUR_DOMAIN}/create-checkout-session`, {
+        fetch('https://coffee-corner-server.onrender.com/create-checkout-session', {
                 method: 'POST',
                 headers: new Headers({
                         'Access-Control-Allow-Origin': '*',

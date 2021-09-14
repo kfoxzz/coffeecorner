@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 let itemArray = [];
 let keys = Object.keys(localStorage);
 
@@ -60,7 +62,7 @@ const initiateCheckout = () => {
                 data: itemArray
         }
         console.log(itemData);
-        fetch('http://localhost:4000/create-checkout-session', {
+        fetch(`${YOUR_DOMAIN}/create-checkout-session`, {
                 method: 'POST',
                 headers: new Headers({
                         'Access-Control-Allow-Origin': '*',

@@ -91,3 +91,14 @@ footer {
 .green-bg {
     background-color: #CADE87;
 }
+
+.btn-secondary {
+    background-color: #5a5454;
+}
+
+.dark-gradient {
+      background: #5a5454; 
+      background: -moz-linear-gradient(to bottom,  #5a5454 0%,#333333 100%); 
+      background: -webkit-linear-gradient(to bottom,  #5a5454 0%,#333333 100%); 
+      background: linear-gradient(to bottom,  #5a5454 0%,#333333 100%);
+}

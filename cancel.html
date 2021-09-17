@@ -21,23 +21,23 @@
 <body class="d-flex flex-column h-100">
 
     <header>
-        <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="jumbotron jumbotron-fluid dark-gradient">
             <div class="container">
                 <div class="row py-4">
-                    <div class="col-2 col-md-1 align-self-center">
+                    <div class="col-2 col-md-1 align-self-center d-none d-sm-block">
                         <a href="index.html">
                             <img src="img/coffee-cup-1.png" class="img-fluid" />
                         </a>
                     </div>
-                    <div class="col align-self-center text-dark border-bottom border-top border-2 border-dark py-3">
-                        <h2>Kristi's Coffee Corner</h2>
-                        <h6 class="text-light">A slice of heaven, in your own neighborhood.</h6>
+                    <div class="col align-self-center text-dark py-3">
+                        <h2 class="mb-0 text-nowrap">Kristi's Coffee Corner</h2>
+                        <h6 class="text-light d-none d-sm-block">A slice of heaven, in your own neighborhood.</h6>
                     </div>
-                    <div class="col-1 col-md-auto text-light text-end mx-3">
+                    <div class="col-auto text-light text-end align-self-center">
                         <a class="btn btn-social-icon" id="login" data-bs-toggle="modal" data-bs-target="#loginModal"><i
                                 class="fa fa-user-circle text-light"></i></a>
-                        <a class="btn btn-social-icon" id="checkout"><i class="fa fa-shopping-cart text-light" data-bs-toggle="modal"
-                                data-bs-target="#checkoutModal"></i></a>
+                        <a class="btn btn-social-icon" id="checkout"><i class="fa fa-shopping-cart text-light"
+                                data-bs-toggle="modal" data-bs-target="#checkoutModal"></i></a>
                         <div class="d-none d-md-block text-bottom">
                             contact@kristiscoffeecorner.co
                             <br />
@@ -84,7 +84,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-tan text-light" data-bs-dismiss="modal">Log in</button>
+                    <button type="button" class="btn green-bg" data-bs-dismiss="modal">Log in</button>
                 </div>
             </div>
         </div>
@@ -109,6 +109,7 @@
                                         <button type="submit" id="remove-button" class="btn btn-secondary"
                                             onclick="removeFromCart('price_1JYwgyAOdPwZgIGSA3AQ8doc')">Remove</button>
                                     </div>
+                                    <br>
                                 </div>
                                 <div class="product" id="price_1JYxqLAOdPwZgIGSem4REW63">
                                     <div class="description">
@@ -118,6 +119,7 @@
                                         <button type="submit" id="remove-button" class="btn btn-secondary"
                                             onclick="removeFromCart('price_1JYxqLAOdPwZgIGSem4REW63')">Remove</button>
                                     </div>
+                                    <br>
                                 </div>
                                 <div class="product" id="price_1JYxrmAOdPwZgIGS5ifyTpdO">
                                     <div class="description">
@@ -127,6 +129,7 @@
                                         <button type="submit" id="remove-button" class="btn btn-secondary"
                                             onclick="removeFromCart('price_1JYxrmAOdPwZgIGS5ifyTpdO')">Remove</button>
                                     </div>
+                                    <br>
                                 </div>
                                 <div class="product" id="price_1JYxsGAOdPwZgIGSgGklx3SR">
                                     <div class="description">
@@ -136,6 +139,7 @@
                                         <button type="submit" id="remove-button" class="btn btn-secondary"
                                             onclick="removeFromCart('price_1JYxsGAOdPwZgIGSgGklx3SR')">Remove</button>
                                     </div>
+                                    <br>
                                 </div>
                                 <div class="product" id="price_1JYxskAOdPwZgIGSr7Zoc0KA">
                                     <div class="description">
@@ -145,6 +149,7 @@
                                         <button type="submit" id="remove-button" class="btn btn-secondary"
                                             onclick="removeFromCart('price_1JYxskAOdPwZgIGSr7Zoc0KA')">Remove</button>
                                     </div>
+                                    <br>
                                 </div>
                                 <div class="product" id="price_1JYxt9AOdPwZgIGSP3N9y9ru">
                                     <div class="description">
@@ -154,13 +159,14 @@
                                         <button type="submit" id="remove-button" class="btn btn-secondary"
                                             onclick="removeFromCart('price_1JYxt9AOdPwZgIGSP3N9y9ru')">Remove</button>
                                     </div>
+                                    <br>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" id="checkout-button" class="btn btn-secondary"
+                    <button type="submit" id="checkout-button" class="btn green-bg"
                         onclick="initiateCheckout()">Checkout</button>
                 </div>
             </div>
